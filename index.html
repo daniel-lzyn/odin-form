@@ -11,7 +11,53 @@
         sidebar
     </div>
     <div class="main_container">
-        main_container
+        <p class="description">
+            This is not a real online service! You know you need something
+            like this in your life to help you realize your deepest dreams.
+            Sign up now to get started.
+        </p>
+        <p class="description">
+            You know you want to.
+        </p>
+        <form action="/">
+            <fieldset class="form_data">
+                <p class="form_header">Let's do this!</p>
+                <div class="form_row">
+                    <div class="form_column">
+                        <label for="first_name">FIRST NAME</label>
+                        <input type="text" id="first_name" name="first_name">
+                    </div>
+                    <div class="form_column">
+                        <label for="last_name"> LAST NAME</label>
+                        <input type="text" id="last_name" name="last_name">
+                    </div>
+                </div>
+                <div class="form_row">
+                    <div class="form_column">
+                        <label for="email">EMAIL</label>
+                        <input type="text" id="email" name="email">
+                    </div>
+                    <div class="form_column">
+                        <label for="phone_number"> PHONE NUMBER</label>
+                        <input type="number" id="phone_number" name="phone_number">
+                    </div>
+                </div>
+                <div class="form_row">
+                    <div class="form_column">
+                        <label for="password">PASSWORD</label>
+                        <input type="text" id="password" name="password">
+                    </div>
+                    <div class="form_column">
+                        <label for="comfirm_password">CONFIRM PASSWORD</label>
+                        <input type="text" id="confirm_password" name="confirm_password">
+                    </div>
+                </div>
+            </fieldset>
+            <button type="submit" class="submit_btn"> Create Account</button>
+        </form>
+        <p class="normal_description">
+            Already have an account? <a href="/login" class="login_link">Log in</a>
+        </p>
     </div>
 </body>
 </html>
