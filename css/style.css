@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+}
+
+.sidebar {
+    flex: 1;
+    height: 100vh;
+    background-image: url("../img/odin-form-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main_container {
+    flex: 2;
+    height: 100vh;
+}
