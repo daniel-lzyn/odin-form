@@ -1,7 +1,9 @@
 :root {
-    --green: hsl(71, 25%, 36%);
-    --green-hover: hsl(71, 25%, 31%);
+    --green: hsl(92, 20%, 35%);
+    --green-hover: hsl(92, 20%, 30%);
     --grey: hsl(0, 0%, 30%);
+    /* BORDER */
+    --form-border-default: hsl(220, 13%, 91%);
 }
 
 * {
@@ -26,9 +28,14 @@ body {
 .main_container {
     flex: 2;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .description {
+    word-wrap: break-word;
+    max-width: 70ch;
     font-size: 1.2rem;
     padding-left: 30px;
     margin-bottom: 25px;
@@ -51,7 +58,7 @@ label {
 
 .form_data {
     border: none;
-    box-shadow: rgb(165, 165, 165) 0 5px 20px 1px;
+    box-shadow: hsl(0, 0%, 80%) 0 5px 20px 1px;
     padding: 30px 0 30px 30px;
 }
 
@@ -68,6 +75,23 @@ label {
 
 .form_row:last-child {
     margin-bottom: 0;
+}
+
+input {
+    outline: none;
+    border: 1px solid var(--form-border-default);
+    border-radius: 5px;
+    padding: 5px 0 5px 5px;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid blue;
+    box-shadow: hsl(0, 0%, 80%) 0 1px 3px 1px;
+}
+
+.password_form:invalid {
+    border-color: red;
 }
 
 .submit_btn {
