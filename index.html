@@ -8,7 +8,18 @@
 </head>
 <body>
     <div class="sidebar">
-        sidebar
+        <div>
+            <div class="logo_bar">
+                <img src="./img/odin-icon.svg" alt="Odin Logo" class="logo">
+                <p class="logo_text">ODIN</p>
+            </div>
+        </div>
+        <p>
+            Photo by
+            <a href="https://unsplash.com/@haliewestphoto">Halie West</a>
+            on
+            <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Unsplash</a>
+        </p>
     </div>
     <div class="main_container">
         <p class="description">
@@ -25,17 +36,17 @@
                 <div class="form_row">
                     <div class="form_column">
                         <label for="first_name">FIRST NAME</label>
-                        <input type="text" id="first_name" name="first_name">
+                        <input type="text" id="first_name" name="first_name" autocomplete="given-name">
                     </div>
                     <div class="form_column">
                         <label for="last_name"> LAST NAME</label>
-                        <input type="text" id="last_name" name="last_name">
+                        <input type="text" id="last_name" name="last_name" autocomplete="family-name">
                     </div>
                 </div>
                 <div class="form_row">
                     <div class="form_column">
                         <label for="email">EMAIL</label>
-                        <input type="email" id="email" name="email">
+                        <input type="email" id="email" name="email" autocomplete="email">
                     </div>
                     <div class="form_column">
                         <label for="phone_number"> PHONE NUMBER</label>
